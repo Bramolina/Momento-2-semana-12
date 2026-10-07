@@ -389,4 +389,14 @@ tbody tr:hover {
         flex-direction: column;
         text-align: center;
     }
+
+    .tabla-seccion {
+    padding: 40px 4%;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 8px 4px;
+    font-size: 13px;
+}
 }
