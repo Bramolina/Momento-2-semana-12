@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios contables BCM | Medellín</title>
+    <!-- Tipografías: Poppins (títulos) e Inter (textos) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap">
+    <!-- Conexión con el archivo de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- LOGO: se define una sola vez aquí (oculto) y se reutiliza con <use> -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="logo-bcm" viewBox="0 0 270 64">
+            <!-- Símbolo: cuadro azul con barras ascendentes -->
+            <rect x="0" y="4" width="56" height="56" rx="12" fill="#1F5F7A"/>
+            <rect x="11" y="34" width="9" height="14" rx="2" fill="#FFFFFF"/>
+            <rect x="24" y="25" width="9" height="23" rx="2" fill="#FFFFFF"/>
+            <rect x="37" y="14" width="9" height="34" rx="2" fill="#2E8B57"/>
+            <rect x="9" y="51" width="38" height="3" rx="1.5" fill="#FFFFFF" opacity="0.6"/>
+            <!-- Texto del logo -->
+            <!-- Letras B, C, M dibujadas con líneas (no dependen de ninguna fuente) -->
+            <g fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M71 10 V36 M71 10 H80 a6.5 6.5 0 0 1 0 13 H71 M80 23 a6.5 6.5 0 0 1 0 13 H71"/>
+                <path d="M120 17.5 A13 13 0 1 0 120 28.5"/>
+                <path d="M133 36 V10 L146 28 L159 10 V36"/>
+            </g>
+            <text x="68" y="55" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#BFD9E3">Servicios contables</text>
+            <rect x="68" y="42" width="36" height="3" rx="1.5" fill="#2E8B57"/>
+        </symbol>
+    </svg>
+
+    <!-- 1. HEADER: logo y menú con Flexbox -->
+    <header class="encabezado">
+        <!-- Logo del negocio (incrustado en el código) -->
+        <a class="logo" href="#inicio" aria-label="Servicios contables BCM, inicio">
+            <svg viewBox="0 0 270 64"><use href="#logo-bcm"/></svg>
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 2. HERO: dos columnas -->
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <h1>Servicios contables BCM</h1>
+                <p class="eslogan">Números claros, decisiones inteligentes.</p>
+                <p>Acompañamos a empresas, emprendedores y profesionales del área contable y financiera con información clara, precisa y oportuna para que cumplan sus obligaciones fiscales y tomen mejores decisiones.</p>
+                <a class="boton" href="#contacto">Solicita tu asesoría</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=70" alt="Calculadora, documentos y laptop sobre un escritorio contable">
+            </div>
+        </section>
+
+        <!-- 3. NOSOTROS -->
+        <section class="nosotros" id="nosotros">
+            <div class="nosotros-imagen">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=70" alt="Contadora y cliente estrechando la mano en una reunión">
+            </div>
+            <div class="nosotros-texto">
+                <h2>Nosotros</h2>
+                <h3>Quiénes somos</h3>
+                <p>Una empresa de Medellín especializada en servicios contables, tributarios y financieros.</p>
+                <h3>Qué hacemos</h3>
+                <p>Llevamos tu contabilidad al día, presentamos tus declaraciones y preparamos tus estados financieros.</p>
+                <h3>A quién ayudamos</h3>
+                <p>A empresas, emprendedores y profesionales que necesitan orden en sus finanzas.</p>
+                <h3>Qué nos diferencia</h3>
+                <p>Soluciones integrales, cumplimiento puntual ante la DIAN y un lenguaje claro, sin tecnicismos innecesarios.</p>
+            </div>
+        </section>
+
+        <!-- 4. NUESTROS SERVICIOS (tarjetas) -->
+        <section class="productos" id="productos">
+            <h2>Nuestros servicios</h2>
+            <div class="productos-contenedor">
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=70" alt="Pantalla con gráficos de registros contables">
+                    <h3>Contabilidad general</h3>
+                    <p>Registro, clasificación y control de las operaciones contables de tu negocio.</p>
+                    <p class="precio">Desde $350.000 / mes</p>
+                    <a class="boton" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&q=70" alt="Documentos y firma para conciliación bancaria">
+                    <h3>Conciliaciones bancarias</h3>
+                    <p>Verificamos que los movimientos del banco coincidan con tus registros contables.</p>
+                    <p class="precio">Desde $150.000 / mes</p>
+                    <a class="boton" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=500&q=70" alt="Calculadora y monedas para cuentas por cobrar y pagar">
+                    <h3>Cuentas por cobrar y pagar</h3>
+                    <p>Control de cartera, obligaciones y pagos para cuidar tu flujo de caja.</p>
+                    <p class="precio">Desde $200.000 / mes</p>
+                    <a class="boton" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500&q=70" alt="Billetes y documentos de nómina">
+                    <h3>Nómina y facturación electrónica</h3>
+                    <p>Liquidación de nómina, prestaciones sociales y gestión de facturas electrónicas.</p>
+                    <p class="precio">Desde $120.000 / mes</p>
+                    <a class="boton" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=70" alt="Análisis de documentos tributarios sobre una mesa">
+                    <h3>Declaraciones tributarias</h3>
+                    <p>Renta, IVA, retención en la fuente, ICA y otras, presentadas a tiempo.</p>
+                    <p class="precio">Desde $180.000 / declaración</p>
+                    <a class="boton" href="#contacto">Cotizar</a>
+                </article>
+
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&q=70" alt="Reunión de asesoría financiera en una oficina">
+                    <h3>Asesoría contable y tributaria</h3>
+                    <p>Acompañamiento para decidir mejor y cumplir con tus obligaciones.</p>
+                    <p class="precio">$90.000 / hora</p>
+                    <a class="boton" href="#contacto">Agendar</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 5. SERVICIOS: contables, tributarios y financieros -->
+        <section class="servicios" id="servicios">
+            <h2>Áreas de trabajo</h2>
+            <div class="servicios-contenedor">
+                <div class="servicio">
+                    <div class="icono">📒</div>
+                    <h3>Servicios contables</h3>
+                    <p>Contabilidad general, conciliaciones, cuentas por cobrar y pagar, nómina y cierres contables.</p>
+                </div>
+                <div class="servicio">
+                    <div class="icono">🧾</div>
+                    <h3>Servicios tributarios</h3>
+                    <p>Declaraciones, facturación electrónica, medios magnéticos e información exógena ante la DIAN.</p>
+                </div>
+                <div class="servicio">
+                    <div class="icono">📈</div>
+                    <h3>Servicios financieros</h3>
+                    <p>Estados financieros y asesoría para que tomes decisiones con datos confiables.</p>
+                    <a class="boton" href="#contacto">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TABLA DE PLANES -->
+        <section class="tabla-seccion">
+            <h2>Planes mensuales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Emprendedor</th>
+                        <th>Pyme</th>
+                        <th>Empresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Contabilidad general</td>
+                        <td>Básica</td>
+                        <td>Completa</td>
+                        <td>Completa</td>
+                    </tr>
+                    <tr>
+                        <td>Conciliaciones bancarias</td>
+                        <td>1 cuenta</td>
+                        <td>Hasta 3 cuentas</td>
+                        <td>Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <td>Declaraciones tributarias</td>
+                        <td>IVA y retención</td>
+                        <td>Todas</td>
+                        <td>Todas</td>
+                    </tr>
+                    <tr>
+                        <td>Estados financieros</td>
+                        <td>Anual</td>
+                        <td>Trimestral</td>
+                        <td>Mensual</td>
+                    </tr>
+                    <tr>
+                        <td>Precio mensual</td>
+                        <td>$250.000</td>
+                        <td>$600.000</td>
+                        <td>$1.200.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 7. GALERÍA con carrusel (animación CSS) -->
+        <section class="galeria" id="galeria">
+            <h2>Galería</h2>
+            <div class="carrusel">
+                <div class="carrusel-pista">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=60" alt="Calculadora y laptop sobre un escritorio">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=60" alt="Gráficos financieros en una pantalla">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=60" alt="Documentos contables y gráficos impresos">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=60" alt="Persona firmando un documento financiero">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400&q=60" alt="Billetes y calculadora">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=60" alt="Equipo de trabajo en una reunión">
+                    <!-- Segunda copia para que el movimiento sea continuo -->
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=60" alt="Calculadora y laptop sobre un escritorio">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=60" alt="Gráficos financieros en una pantalla">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=60" alt="Documentos contables y gráficos impresos">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=60" alt="Persona firmando un documento financiero">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400&q=60" alt="Billetes y calculadora">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=60" alt="Equipo de trabajo en una reunión">
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FORMULARIO DE CONTACTO -->
+        <section class="contacto" id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Medellín">
+
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio">
+                    <option value="">Selecciona una opción</option>
+                    <option>Contabilidad general</option>
+                    <option>Conciliaciones bancarias</option>
+                    <option>Declaraciones tributarias</option>
+                    <option>Medios magnéticos e información exógena</option>
+                    <option>Estados financieros</option>
+                    <option>Asesoría contable, tributaria y financiera</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas"></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="pie-pagina">
+        <div class="pie-columna">
+            <svg class="pie-logo" viewBox="0 0 270 64" aria-label="Servicios contables BCM"><use href="#logo-bcm"/></svg>
+            <h3>Servicios contables BCM</h3>
+            <p>Números claros, decisiones inteligentes.</p>
+        </div>
+        <div class="pie-columna">
+            <p>Ciudad: Medellín</p>
+            <p>Teléfono: 3204460111</p>
+            <p>Correo: BCM@gmail.com</p>
+            <p>Instagram: BCM2026_123</p>
+        </div>
+        <p class="derechos">© 2026 BCM Servicios contables y financieros — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
