@@ -68,7 +68,8 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 18px 8%;
-    background-color: var(--color-principal);
+     background-color: rgba(15, 45, 61, 0.8);
+    backdrop-filter: blur(6px);
     /* Header fijo */
     position: sticky;
     top: 0;
