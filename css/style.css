@@ -190,12 +190,15 @@ html {
 .productos-contenedor {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .producto {
     flex: 1 1 280px;
     max-width: 380px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-fondo);
     padding: 20px;
     border: 1px solid #D5E0E6;
@@ -216,8 +219,13 @@ html {
 }
 
 .precio {
+    margin-top: auto;
     font-weight: 500;
     color: var(--color-complementario);
+}
+
+.producto .boton {
+    align-self: center;
 }
 
 /* ===== 5. Servicios ===== */
@@ -380,9 +388,13 @@ tbody tr:hover {
     scroll-padding-top: 110px;
 }
 
+    .menu {
+        width: 100%;
+    }
+
     .menu ul {
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         gap: 4px 14px;
     }
 
