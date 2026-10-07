@@ -69,7 +69,15 @@ section {
     align-items: center;
     padding: 18px 8%;
     background-color: var(--color-principal);
+    /* Header fijo */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
 }
+
+html {
+    scroll-padding-top: 90px;
 
 .logo {
     display: block;
@@ -352,10 +360,15 @@ tbody tr:hover {
 /* ===== Responsive: tablets y celulares ===== */
 @media (max-width: 768px) {
 
+
     .encabezado {
         flex-direction: column;
         gap: 12px;
     }
+
+    html {
+    scroll-padding-top: 220px;
+}
 
     .menu ul {
         flex-direction: column;
