@@ -79,6 +79,8 @@ section {
 
 html {
     scroll-padding-top: 90px;
+    }
+    
 
 .logo {
     display: block;
@@ -364,17 +366,28 @@ tbody tr:hover {
 
     .encabezado {
         flex-direction: column;
-        gap: 12px;
+        gap: 6px;
+        padding: 8px 4%;
+    }
+
+    /* Logo más pequeño en celular */
+    .logo svg {
+        width: 150px;
+        height: 36px;
     }
 
     html {
-    scroll-padding-top: 220px;
+    scroll-padding-top: 110px;
 }
 
     .menu ul {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 10px;
+        gap: 4px 14px;
+    }
+
+    .menu a {
+        font-size: 14px;
     }
 
     .hero,
